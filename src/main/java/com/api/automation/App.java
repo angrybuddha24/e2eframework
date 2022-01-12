@@ -1,16 +1,15 @@
 package com.api.automation;
 
-import com.api.automation.practice.LombokDemo;
+import com.api.automation.practice.POJOtoJSON;
 
 public class App {
   public static void main(String[] args) {
-    LombokDemo lombokDemo = new LombokDemo();
-    lombokDemo.setAge(26);
-    lombokDemo.setName("abc");
-    lombokDemo.setStudent(true);
 
-    System.out.println(lombokDemo.getAge());
-    System.out.println(lombokDemo.getName());
-    System.out.println(lombokDemo.isStudent());
+// new POJOtoJSON().convertPOJOtoJSONUsingGSON();
+new POJOtoJSON().convertPOJOtoJSONUsingJackson();
+
+
+
+
   }
 }
