@@ -1,4 +1,4 @@
-package com.api.automation.practice;
+package com.api.automation.slf4j;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,17 +25,17 @@ public class Slf4jDemo {
         /*
          * Logging Framework Overview
          * A logging framework usually contains three elements −
-         * 
+         *
          * Logger
          * Captures the message along with the metadata.
-         * 
+         *
          * Formatter
          * Formats the messages captured by the logger.
-         * 
+         *
          * Handler
          * The Handler or appender finally dispatches the messages either by printing on
          * the console or, by storing in the database or, by sending through an email.
-         * 
+         *
          * Some frameworks combine the logger and appender elements to speed up the
          * operations.
          */
@@ -75,36 +75,36 @@ public class Slf4jDemo {
          * Severity Level
          * The messages logged will be of various levels. The following table lists down
          * the general levels of logging.
-         * 
+         *
          * Sr.No Severity level & Description
          * 1
          * Fatal
-         * 
+         *
          * Severe issue that causes the application to terminate.
-         * 
+         *
          * 2
          * ERROR
-         * 
+         *
          * Runtime errors.
-         * 
+         *
          * 3
          * WARNING
-         * 
+         *
          * In most cases, the errors are due to the usage of deprecated APIs.
-         * 
+         *
          * 4
          * INFO
-         * 
+         *
          * Events that occur at runtime.
-         * 
+         *
          * 5
          * DEBUG
-         * 
+         *
          * Information about the flow of the system.
-         * 
+         *
          * 6
          * TRACE
-         * 
+         *
          * More detailed information about the flow of the system.
          */
 
@@ -137,7 +137,7 @@ public class Slf4jDemo {
          * To make SLF4J work along with slf4l-api-x.x.jar, you need to add the
          * respective Jar file (binding) of the desired logger framework in the
          * classpath of the project (set build path).
-         * 
+         *
          * To switch from one framework to other, you need to replace the respective
          * binding. If no bounding is found, it defaults to no-operation mode.
          */
@@ -160,7 +160,7 @@ public class Slf4jDemo {
      * of logging framework, it is an abstraction for all those logging frameworks
      * in Java similar to log4J. Therefore, you cannot compare both. However, it is
      * always difficult to prefer one between the two.
-     * 
+     *
      * If you have a choice, logging abstraction is always preferable than logging
      * framework. If you use a logging abstraction, SLF4J in particular, you can
      * migrate to any logging framework you need at the time of deployment without

@@ -1,10 +1,6 @@
-package com.api.automation.practice;
+package com.api.automation.lombok;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 /* References 
 https://www.javatpoint.com/lombok-java 
@@ -67,7 +63,8 @@ So, if the superclass doesn't have a no-args constructor, Lombok can't generate 
 public class LombokDemo {
 
     private String name;
-    private @EqualsAndHashCode.Exclude int age;
+    private @EqualsAndHashCode.Exclude
+    int age;
     @Builder.Default
     private boolean isStudent = true;
 
